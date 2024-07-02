@@ -1,0 +1,34 @@
+{
+  "name": "@xeq/vite_create_plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && run-s build-bundle postbuild",
+    "build-bundle": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js",
+    "postbuild": "copyfiles index.d.ts dist"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.14.9",
+    "copyfiles": "^2.4.1",
+    "esbuild": "^0.23.0",
+    "markdown-it": "^14.1.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.1"
+  }
+}
