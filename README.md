@@ -1,2 +1,2 @@
-# vite_study
-vite_study
+# xeq_front_study
+xeq_front_study
