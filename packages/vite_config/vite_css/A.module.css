@@ -1,0 +1,12 @@
+.footer{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.footer:hover{
+  background-color: blue;
+}
+.footer-content{
+  color: white;
+}
