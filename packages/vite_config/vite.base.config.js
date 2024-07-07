@@ -22,5 +22,13 @@ export default defineConfig({
       // },
       globalModulePaths: [globalModulePath.replace(/\\/g, '/')], // 不想被vite处理的全局css文件
     },
+    preprocessorOptions: {
+      less: {
+        math: "always", // 处理css计算，default 处理带括号的()
+        globalVars: { // 全局变量
+          mainBg: 'red'
+        }
+      }
+    }
   },
 })
