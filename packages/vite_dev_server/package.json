@@ -11,8 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "@types/koa": "^2.15.0",
+    "app-root-path": "^3.1.0",
     "koa": "^2.15.3",
     "koa-static": "^5.0.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "slash": "^5.1.0"
   }
 }

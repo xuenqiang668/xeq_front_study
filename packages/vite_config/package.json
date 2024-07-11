@@ -14,5 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "less": "^4.2.0"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^9.6.0",
+    "ramda": "^0.30.1"
   }
 }

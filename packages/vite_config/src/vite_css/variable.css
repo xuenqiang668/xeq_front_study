@@ -1,0 +1,7 @@
+:root {
+  --globa-color: #000;
+}
+
+/* 
+  css 来定义全局变量，不用被less  scss 处理，只能交给postcss处理，可以直接使用
+*/
