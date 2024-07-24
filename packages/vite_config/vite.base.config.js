@@ -1,18 +1,20 @@
 import { defineConfig } from 'vite'
 import path from 'path'
 import postcssPresetEnv from 'postcss-preset-env'
+import viteAlias from './plugin/viteAlias'
+import viteHtml from './plugin/viteHtml'
 
 const globalModulePath = path.resolve(__dirname, './vite_css/B.module.css')
-
 export default defineConfig({
   optimizeDeps: {
     exclude: [],
   },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
+  plugins: [viteAlias(), viteHtml()],
+  // resolve: {
+  //   alias: {
+  //     '@': path.resolve(__dirname, './src'),
+  //   },
+  // },
   envPrefix: 'XEQ_',
   css: {
     modules: {
