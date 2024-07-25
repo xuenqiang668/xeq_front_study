@@ -13,9 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^4.2.0"
+    "less": "^4.2.0",
+    "vite-plugin-mock": "^3.0.2"
   },
   "dependencies": {
+    "mockjs": "^1.1.0",
     "postcss-preset-env": "^9.6.0",
     "ramda": "^0.30.1"
   }

@@ -14,3 +14,5 @@ const max = R.max(1, 2)
 console.log('R: ', max)
 
 import './src/assets/svgLoader.js'
+
+fetch('/api/user', { method: 'post' }).then((res) => console.log(res))

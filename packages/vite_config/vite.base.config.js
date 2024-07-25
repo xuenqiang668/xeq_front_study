@@ -3,13 +3,15 @@ import path from 'path'
 import postcssPresetEnv from 'postcss-preset-env'
 import viteAlias from './plugin/viteAlias'
 import viteHtml from './plugin/viteHtml'
+import { viteMockServe } from 'vite-plugin-mock'
+import viteMock from './plugin/viteMock'
 
 const globalModulePath = path.resolve(__dirname, './vite_css/B.module.css')
 export default defineConfig({
   optimizeDeps: {
     exclude: [],
   },
-  plugins: [viteAlias(), viteHtml()],
+  plugins: [viteAlias(), viteHtml(), viteMock()],
   // resolve: {
   //   alias: {
   //     '@': path.resolve(__dirname, './src'),
