@@ -5,13 +5,14 @@ import viteAlias from './plugin/viteAlias'
 import viteHtml from './plugin/viteHtml'
 import { viteMockServe } from 'vite-plugin-mock'
 import viteMock from './plugin/viteMock'
+import vitePluginCycle from './plugin/vitePluginCycle'
 
 const globalModulePath = path.resolve(__dirname, './vite_css/B.module.css')
 export default defineConfig({
   optimizeDeps: {
     exclude: [],
   },
-  plugins: [viteAlias(), viteHtml(), viteMock()],
+  plugins: [viteAlias(), viteHtml(), viteMock(), vitePluginCycle()],
   // resolve: {
   //   alias: {
   //     '@': path.resolve(__dirname, './src'),
