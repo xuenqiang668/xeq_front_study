@@ -160,3 +160,17 @@ vite-plugin-cdn-import
 
 - transformIndexHtml: 处理 index.html 文件
   > 就是给 body 加 script 标签，把 cdn 的 js 文件加进去
+
+### 跨域
+
+跨域【仅发生在浏览器】:当 A 源浏览器的网页 向 B 源的服务器地址 (不满足同源策略，满足同源限制)请求对应信息，就会产生跨域，跨域请求默认情况下会被浏览器拦截，除非对应的请求服务器出具标记说这个 A 源是允许拿 B 源的东西的
+
+- 开发时态:我们一般就利用 构建工具或者脚手架或者第三方库的 proxy 代理配置，或者我们自己搭一个开发服务器来解决这个问题
+- 生产时态我们一般是交给后端去处理跨域的【后端或者运维做的】:
+
+  - ngnix 亚代理服务本质的原理就是和我们的本地开发 vite 服务器做跨域是一样
+    配置身份标记
+  - Access-Contro1-A11ow-0rigin:代表哪些域是我的朋友，标记了朋友以后 浏览器就不会拦截
+    - 如：
+      - baike.baidu.com 请求(https://miao.baidu.com/abdr) 的资源，就会被浏览器拦截，除非(https://miao.baidu.com/abdr) 出具身份标记允许 baike.baidu.com 访问 baidu.com 的资源
+      - baidu.com 的 response header 加上 Access-Contro1-A11ow-origin: baike.baidu.com
