@@ -1,21 +1,20 @@
 {
-  "name": "vite-typescript",
+  "name": "vite-cdn",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite-plugin-checker": "^0.7.2"
-  },
   "dependencies": {
-    "@types/lodash-es": "^4.17.12",
     "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "vite-plugin-cdn-import": "^1.0.1"
   }
 }

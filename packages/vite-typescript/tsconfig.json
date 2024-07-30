@@ -3,5 +3,7 @@
     "skipLibCheck": true, // 是否跳过nide_modules目录检车
     "module": "ESNext",
     "moduleResolution": "node", // 模块解析策略
+    "lib": ["es2017", "DOM"], // 编译目标库, es2017是ES2017的标准库, DOM是Web DOM和BOM的标准库
+    "allowSyntheticDefaultImports": true
   }
 }
