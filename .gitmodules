@@ -1,0 +1,3 @@
+[submodule ".\\packages\\webpack\\webpack_loader"]
+	path = .\\packages\\webpack\\webpack_loader
+	url = https://github.com/xuenqiang668/webpack_loader.git
