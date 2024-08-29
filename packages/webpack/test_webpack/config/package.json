@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npx webpack serve --config ./config/webpack.dev.js",
+    "build": "npx webpack --config ./config/webpack.prod.js"
+  },
+  "browserslist": [
+    "ie >= 8"
+  ],
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "not dead"
+  ]
+}
