@@ -1,3 +1,9 @@
 [submodule ".\\packages\\webpack\\webpack_loader"]
 	path = .\\packages\\webpack\\webpack_loader
 	url = https://github.com/xuenqiang668/webpack_loader.git
+[submodule ".\\packages\\webpack\\webpack_tapable"]
+	path = .\\packages\\webpack\\webpack_tapable
+	url = https://github.com/xuenqiang668/webpack_tapable.git
+[submodule ".\\packages\\webpack\\webpack_build_flow"]
+	path = .\\packages\\webpack\\webpack_build_flow
+	url = https://github.com/xuenqiang668/webpack_build_flow.git
