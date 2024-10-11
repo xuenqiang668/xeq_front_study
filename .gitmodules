@@ -10,3 +10,10 @@
 [submodule "packages/webpack/webpack_plugin"]
 	path = packages/webpack/webpack_plugin
 	url = https://github.com/xuenqiang668/webpack_plugin.git
+
+[submodule "packages/babel-ast/babel_study"]
+	path = packages/babel-ast/babel_study
+	url = https://github.com/xuenqiang668/babel_-study.git
+[submodule "packages/babel-ast/ast_compilation_principle"]
+	path = packages/babel-ast/ast_compilation_principle
+	url = https://github.com/xuenqiang668/ast_compilation_principle.git
