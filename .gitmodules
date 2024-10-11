@@ -17,3 +17,9 @@
 [submodule "packages/babel-ast/ast_compilation_principle"]
 	path = packages/babel-ast/ast_compilation_principle
 	url = https://github.com/xuenqiang668/ast_compilation_principle.git
+[submodule "packages/webpack/webpack_hmr"]
+	path = packages/webpack/webpack_hmr
+	url = https://github.com/xuenqiang668/webpack_hmr.git
+[submodule "packages/webpack/webpack_hmr_achieve"]
+	path = packages/webpack/webpack_hmr_achieve
+	url = https://github.com/xuenqiang668/webpack_hmr_achieve.git

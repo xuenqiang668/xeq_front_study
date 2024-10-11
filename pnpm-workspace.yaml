@@ -1,4 +1,5 @@
 packages:
   - 'packages/vite/**'
   - 'packages/webpack/**'
+  - 'packages/babel-ast/**'
   - 'main'
