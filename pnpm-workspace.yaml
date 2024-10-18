@@ -2,4 +2,5 @@ packages:
   - 'packages/vite/**'
   - 'packages/webpack/**'
   - 'packages/babel-ast/**'
+  - 'packages/code-source/**'
   - 'main'
